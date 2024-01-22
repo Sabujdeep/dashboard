@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --dashboard-side: #9333ea;
+    --dashboard-main: #d4d4d8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ;
+    /* border: 1px solid red; */
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* -------------------- */
+
+#sidebar{
+    background-color: var(--dashboard-side);
+    width: 20rem;
+    min-height: 100vh;
+    padding: 1rem;
+    
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.title > svg{
+    height: 3rem;
+}
+
+.logos{
+    height: 2rem;
+    /* border: 1px solid red; */
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.items > p{
+    font-size: 1.5rem;
+}
+
+.contents{
+    margin-bottom: 4rem;
+}
+.contents, .settings{
+    margin-left: 2rem;
+}
+
+
+/* ----------------- */
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 12rem;
+}
+
+.search{
+    padding: 2rem;
+}
+
+.upper{
+    display: flex;
+    height: 5rem;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.search{
+    display: flex;
+    gap: 1rem;
+}
+.search > svg{
+    cursor: pointer;
+}
+#search-box{
+    border-radius: 1rem;
+    width: 40vw;
+    background-color: var(--dashboard-main);
+    height: 2rem;
+    /* color: white; */
+    text-indent: 1rem;
+    border-style: none;
+}
+#search-box:focus{
+    outline: none;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    width: 20vw;
+}
+
+.lower{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.desc{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-right: 3rem;
+}
+
+li{
+    text-decoration: none;
+    background-color: var(--dashboard-side);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -------------------- */
+
+.main-content{
+    background-color: var(--dashboard-main);
+    flex: 1; /*occupies the remaining space*/
+    padding: 2rem 1rem ;
+    display: flex;
+    gap: 1rem;
+}
+
+.projects{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.yourProjects{
+    display: grid;
+    grid-template-columns: 22rem 22rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.card{
+    display: flex;
+    height: 13rem;
+    /* width: 20rem; */
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card > .blank{
+    background-color: var(--dashboard-side);
+    width: 2rem;
+}
+
+
+.content{
+    padding: 1rem;
+}
+.more{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+
+/* -------------- */
+.miscellaneous{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+}
+
+.announcements{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.announcements > div > p{
+    margin-bottom: 1rem;
+}
+
+.trending{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.trends{
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    overflow: hidden;
+    gap: 1rem;
+    flex-direction: column;
+}
